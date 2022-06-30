@@ -1,0 +1,14 @@
+:root {
+  --eerie-black: #212121;
+  --oxford-blue: #003;
+  --pacific-blue: #47A8BD;
+  --corn: #f5e663;
+  --granite-gray: #616163;
+  --flat-black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
