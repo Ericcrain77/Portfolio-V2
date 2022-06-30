@@ -1,5 +1,6 @@
 :root {
   --eerie-black: #212121;
+  --raisin-black: #23252F;
   --oxford-blue: #003;
   --pacific-blue: #47A8BD;
   --corn: #f5e663;
@@ -11,4 +12,5 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: var(--raisin-black);
 }

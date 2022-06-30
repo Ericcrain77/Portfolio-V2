@@ -1,0 +1,50 @@
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 12rem 12rem 25rem 12rem;
+}
+
+.intro-words {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-words h1 {
+    font-weight: 600;
+    font-size: clamp(40px, 8vw, 80px);
+    border-bottom: 1px solid var(--corn);
+    padding-bottom: .5rem;
+    width: 50%;
+}
+
+.intro-words h2 {
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 40px);
+    padding: .5rem 0;
+}
+
+.intro-words h3 {
+    font-size: clamp(20px, 2vw, 20px);
+}
+
+.intro-words h4 {
+    padding-top: .5rem;
+    font-weight: 400;
+    font-size: clamp(10px, 2vw, 20px);
+}
+
+.carousel {
+    width: 20rem;
+    align-self: center;
+    margin-right: 4rem;
+    border-radius: 50%;
+}
+
+.carousel p {
+    display: none;
+}
+
+.thumbs-wrapper {
+    display: none;
+}
