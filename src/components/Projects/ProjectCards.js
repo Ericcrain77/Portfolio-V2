@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css';
+import './projects.css';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import work from './work.json';
 

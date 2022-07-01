@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css';
+import './projects.css';
 import ProjectCards from "./ProjectCards";
 
 function Projects() {
