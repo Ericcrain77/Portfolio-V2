@@ -1,0 +1,51 @@
+[
+    {
+        "title": "UrMapp",
+        "description": "UrMapp is the online version of the scratch off maps where you slowly scratch off parts of a map and it reveals all of the states you've been to.",
+        "image": "UrMapp-Logo",
+        "appLink": "https://nameless-beach-59792.herokuapp.com/",
+        "githubLink": "https://github.com/Ericcrain77/urmapp"
+    },
+    {
+        "title": "Table Top Warriors",
+        "description": "Table Top Warriors is a website designed for trading card game enthusiasts to create, edit, and store their deck collection. Whether the users deck exists in real life, or virtually, Table Top Warriors is a useful tool in organizing the three most famous trading card games in the card game market.",
+        "image": "Table-Top-Warriors-Logo",
+        "appLink": "https://glacial-wave-35066.herokuapp.com/",
+        "githubLink": "https://github.com/Ericcrain77/table-top-warriors"
+    },
+    {
+        "title": "Sneak Peek",
+        "description": "Sneak Peek is a website for fashion enthusiasts and sneakerheads to find their next pair of sneakers to go with their wardrobes.",
+        "image": "Sneak-Peek",
+        "appLink": "https://okojie615.github.io/Sneak-Peek/",
+        "githubLink": "https://github.com/Okojie615/NEDJProject1"
+    },
+    {
+        "title": "PWA Budget Tracker",
+        "description": "A budget tracking application that allows the user to add expenses and deposits to their budget with or without an internet connection.",
+        "image": "Budget-Tracker-Homepage",
+        "appLink": "https://blooming-hollows-41925.herokuapp.com/",
+        "githubLink": "https://github.com/Ericcrain77/budget-tracker"
+    },
+    {
+        "title": "Run Buddy",
+        "description": "A website that offers fitness training services.",
+        "image": "Run-Buddy",
+        "appLink": "https://ericcrain77.github.io/run-buddy/",
+        "githubLink": "https://github.com/Ericcrain77/run-buddy"
+    },
+    {
+        "title": "Coding Quiz",
+        "description": "A website that offers a simple quiz about coding.",
+        "image": "Coding-Quiz",
+        "appLink": "https://ericcrain77.github.io/coding-quiz/",
+        "githubLink": "https://github.com/Ericcrain77/coding-quiz"
+    },
+    {
+        "title": "Weather Dashboard",
+        "description": "A browser based weather dashboard that dynamically updates when you search for the weather conditions of different cities.",
+        "image": "Weather-Dashboard",
+        "appLink": "https://ericcrain77.github.io/weather-dashboard/",
+        "githubLink": "https://github.com/Ericcrain77/weather-dashboard"
+    }
+]
