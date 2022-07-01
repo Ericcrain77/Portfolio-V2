@@ -1,0 +1,20 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 8rem 12rem 10rem 12rem;
+    background-color: var(--eerie-black);
+}
+
+.project-section h1 {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--oxford-blue);
+}
+
+.project-card {
+    width: 18rem;
+    border: 1px solid var(--granite-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
