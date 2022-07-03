@@ -1,0 +1,9 @@
+.footer-conatiner {
+        display: flex;
+        background-color: var(--raisin-black);
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: .5rem;
+        color: white;
+}
