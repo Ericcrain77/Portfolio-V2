@@ -7,7 +7,7 @@ import { Card } from 'react-bootstrap';
 function ProjectCards() {
     return (
         <div className="project-section">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div className="cards">
                 {
                     work && work.length > 0 && work.map((work, i) =>

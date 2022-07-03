@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 0 12rem 10rem 12rem;
+    padding: 0 12rem 20rem 12rem;
     background-color: var(--eerie-black);
 }
 
@@ -15,9 +15,12 @@
     align-content: center;
 }
 
-.project-section h1 {
+.project-section h2 {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--oxford-blue);
+    padding-top: 1rem;
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 40px);
 }
 
 .project-card {

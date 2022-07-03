@@ -2,20 +2,20 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 8rem 12rem 10rem 12rem;
+    padding: 12rem 12rem 20rem 12rem;
     background-color: var(--eerie-black);
 }
 
 .about-section h2 {
     border-bottom: 1px solid var(--pacific-blue);
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     width: 98%;
     font-weight: 400;
     font-size: clamp(20px, 4vw, 40px);
 }
 
 .about-section p {
-    padding-top: 1rem;
+    padding-top: 2rem;
     font-weight: 400;
     font-size: clamp(10px, 2vw, 20px);
 }
