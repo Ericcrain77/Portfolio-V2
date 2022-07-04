@@ -2,7 +2,7 @@
         display: flex;
         background-color: var(--raisin-black);
         gap: 2rem;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         padding: 2rem;
         color: white;
@@ -11,17 +11,4 @@
 .footer-conatiner h3 {
         font-weight: 400;
         font-size: clamp(10px, 2vw, 20px);
-}
-
-.footer-conatiner i {
-        padding-right: 12rem;
-}
-
-.footer-conatiner-icons {
-        color: var(--corn);
-}
-
-.footer-conatiner-icons:hover {
-        color: var(--granite-gray);
-        transition: .25s ease-in-out;
 }

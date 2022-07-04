@@ -14,7 +14,7 @@
 .intro-words h1 {
     font-weight: 600;
     font-size: clamp(40px, 8vw, 80px);
-    border-bottom: 1px solid var(--corn);
+    border-bottom: 1px solid var(--pacific-blue);
     padding-bottom: .5rem;
     width: 50%;
 }

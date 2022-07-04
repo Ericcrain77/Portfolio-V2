@@ -1,8 +1,7 @@
 import React from "react";
 import './contactForm.css';
 import { IconContext } from 'react-icons';
-import { FaLocationArrow, FaLinkedin } from 'react-icons/fa';
-import { HiMail } from 'react-icons/hi';
+import { FaLocationArrow, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 
 function ContactForm() {
@@ -12,16 +11,16 @@ function ContactForm() {
             <div className="contact-form-container">
                 <div className="contact-form-left">
                     <div className="contact-preferences">
-                        <i><IconContext.Provider value={{ size: 28}}><FaLocationArrow /></IconContext.Provider></i>
+                        <i><IconContext.Provider value={{ size: 34}}><FaLocationArrow /></IconContext.Provider></i>
                         <p>Chattanooga, TN</p>
                     </div>
                     <div className="contact-preferences">
-                        <i><IconContext.Provider value={{ size: 28}}><HiMail /></IconContext.Provider></i>
-                        <p>ericcrain77@gmail.com</p>
+                        <i><a href="https://www.linkedin.com/in/eric-crain-899a53218/" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: 34}}><FaLinkedin /></IconContext.Provider></a></i>
+                        <p><a href="https://www.linkedin.com/in/eric-crain-899a53218/" target="_blank" rel="noopener noreferrer">My Linkedin Profile</a></p>
                     </div>
                     <div className="contact-preferences">
-                        <i><IconContext.Provider value={{ size: 28}}><FaLinkedin /></IconContext.Provider></i>
-                        <p>My Linkedin Profile</p>
+                        <i><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: 34}}><FaGithub /></IconContext.Provider></a></i>
+                        <p><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
                     </div>
                 </div>
                 <form className="contact-form-right">

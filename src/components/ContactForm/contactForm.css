@@ -23,19 +23,36 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
 }
 
 .contact-preferences {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 125%;
 }
 
 .contact-preferences p {
+    margin-left: 2rem;
     font-weight: 400;
     font-size: clamp(10px, 2vw, 20px);
+}
+
+.contact-preferences p a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-preferences p a:hover {
+    color: var(--corn);
+    transition: .25s ease-in-out;
+}
+
+.contact-icons {
+    color: white;
+}
+
+.contact-icons:hover {
+    color: var(--corn);
+    transition: .25s ease-in-out;
 }
 
 .contact-form-right {
@@ -43,7 +60,6 @@
     flex-direction: column;
     justify-content: center;
     width: 60%;
-    margin-left: 20rem;
     padding-left: 4rem;
     border-left: 1px solid var(--granite-gray);
 }
