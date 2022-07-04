@@ -85,6 +85,7 @@
 
 .contact-form-right button:hover {
     background-color: var(--pacific-blue-dark);
+    transition: .25s ease-in-out;
 }
 
 .contact-form-right button:active {
