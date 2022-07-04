@@ -22,7 +22,20 @@
 .contact-form-left {
     display: flex;
     flex-direction: column;
-    padding-top: 20rem;
+    justify-content: space-evenly;
+
+}
+
+.contact-preferences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125%;
+}
+
+.contact-preferences p {
+    font-weight: 400;
+    font-size: clamp(10px, 2vw, 20px);
 }
 
 .contact-form-right {

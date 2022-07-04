@@ -1,7 +1,9 @@
 import React from "react";
 import './contactForm.css';
-import { FaLocationArrow } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+import { IconContext } from 'react-icons';
+import { FaLocationArrow, FaLinkedin } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+
 
 function ContactForm() {
     return (
@@ -9,8 +11,18 @@ function ContactForm() {
             <h2>Contact Me</h2>
             <div className="contact-form-container">
                 <div className="contact-form-left">
-                    <a><i><FaLocationArrow /></i> Chattanooga, TN</a>
-                    <i><FiMail /> ericcrain77@gmail.com</i>
+                    <div className="contact-preferences">
+                        <i><IconContext.Provider value={{ size: 28}}><FaLocationArrow /></IconContext.Provider></i>
+                        <p>Chattanooga, TN</p>
+                    </div>
+                    <div className="contact-preferences">
+                        <i><IconContext.Provider value={{ size: 28}}><HiMail /></IconContext.Provider></i>
+                        <p>ericcrain77@gmail.com</p>
+                    </div>
+                    <div className="contact-preferences">
+                        <i><IconContext.Provider value={{ size: 28}}><FaLinkedin /></IconContext.Provider></i>
+                        <p>My Linkedin Profile</p>
+                    </div>
                 </div>
                 <form className="contact-form-right">
                     <label for="fname">First Name</label>

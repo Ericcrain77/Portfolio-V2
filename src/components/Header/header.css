@@ -9,8 +9,7 @@
 
 .header-container img {
     width: 4rem;
-    margin-top: .5rem;
-    margin-left: 2rem;
+    margin: .5rem 2rem;
 }
 
 .header-container nav {
