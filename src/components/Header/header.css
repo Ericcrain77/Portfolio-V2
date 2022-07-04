@@ -28,6 +28,7 @@
     text-decoration: none;
     color: white;
     font-size: large;
+    padding-left: .5rem;
 }
 
 .header-container ul li a:hover {

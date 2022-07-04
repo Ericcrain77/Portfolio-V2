@@ -9,6 +9,7 @@
 .intro-words {
     display: flex;
     flex-direction: column;
+    padding-top: 1.2rem;
 }
 
 .intro-words h1 {

@@ -1,4 +1,4 @@
-.project-section {
+.challenges-section {
     display: flex;
     flex-direction: column;
     color: white;
@@ -6,32 +6,18 @@
     background-color: var(--eerie-black);
 }
 
-.cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    
-}
-
-.project-section h2 {
+.challenges-section h2 {
     padding-bottom: 2rem;
-    border-bottom: 1px solid var(--oxford-blue);
+    border-bottom: 1px solid var(--pacific-blue);
     padding-top: 1rem;
     font-weight: 400;
     font-size: clamp(20px, 4vw, 40px);
 }
 
-.project-card {
+.challenges-section-cards {
     width: 18rem;
     border: 1px solid var(--granite-gray);
     border-radius: 8px;
     padding: 1rem;
     margin-top: 2rem;
-    height: 26rem;
-}
-
-.card-image {
-    max-width: 16rem;
 }
