@@ -13,6 +13,8 @@
 }
 
 .header-container nav {
+    display: flex;
+    flex-direction: row;
     margin-right: 2rem;
 }
 
@@ -34,6 +36,24 @@
 .header-container ul li:hover {
     opacity: 60%;
     transition: opacity .25s ease-in-out;
+}
+
+.resume-btn {
+    font-size: large;
+    background-color: var(--raisin-black);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-top: -.25rem;
+    margin-left: 4rem;
+    padding: .5rem 1.25rem;
+    color: white;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    background-color: var(--pacific-blue);
+    transition: .25s ease-in-out;
+    color: var(--oxford-blue);
 }
 
 .is-sticky {

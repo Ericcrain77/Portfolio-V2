@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './header.css';
 import EC_icon_1024x1024 from '../../assets/icons/EC_icon_1024x1024.png';
+import resume from '../../assets/resume/resume.pdf';
 import { IconContext } from 'react-icons';
 import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { GoCode } from 'react-icons/go';
@@ -49,6 +50,7 @@ function Header() {
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+                <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-btn">Resume</a>
             </nav>
       </header>
     )
