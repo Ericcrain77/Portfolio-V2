@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ericcrain/static/css/main.0973d3d0.css",
+    "main.js": "/ericcrain/static/js/main.92b01e38.js",
+    "static/media/Sneak-Peek.png": "/ericcrain/static/media/Sneak-Peek.61b8d8a35439d47ebb6b.png",
+    "static/media/resume.pdf": "/ericcrain/static/media/resume.09538c039bebf7f454c7.pdf",
+    "static/media/Table-Top-Warriors-Logo.png": "/ericcrain/static/media/Table-Top-Warriors-Logo.7ea511d03dab2fc56509.png",
+    "static/media/EC_icon_1024x1024.png": "/ericcrain/static/media/EC_icon_1024x1024.4310367acb68d7414692.png",
+    "static/media/EricCat.jpg": "/ericcrain/static/media/EricCat.86aa227d63f4fa52ae20.jpg",
+    "static/media/UrMapp-Logo.png": "/ericcrain/static/media/UrMapp-Logo.62cae228fc61bf8aaf0d.png",
+    "static/media/EricMando.jpg": "/ericcrain/static/media/EricMando.6d298a9d700d0774ee9c.jpg",
+    "static/media/EricCat2.jpg": "/ericcrain/static/media/EricCat2.efb904cfd47b4a73146c.jpg",
+    "static/media/Ericbw.jpg": "/ericcrain/static/media/Ericbw.25d2a35fe362f5d4d29d.jpg",
+    "static/media/Run-Buddy.png": "/ericcrain/static/media/Run-Buddy.c545d7e0a7c85d8933bf.png",
+    "static/media/Coding-Quiz.png": "/ericcrain/static/media/Coding-Quiz.44d9a0fdab0f6b339553.png",
+    "static/media/Weather-Dashboard.png": "/ericcrain/static/media/Weather-Dashboard.2d22e4632bf00a75e67d.png",
+    "static/media/Budget-Tracker-Homepage.png": "/ericcrain/static/media/Budget-Tracker-Homepage.282a4d30abfe9edd53cf.png",
+    "index.html": "/ericcrain/index.html",
+    "main.0973d3d0.css.map": "/ericcrain/static/css/main.0973d3d0.css.map",
+    "main.92b01e38.js.map": "/ericcrain/static/js/main.92b01e38.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0973d3d0.css",
+    "static/js/main.92b01e38.js"
+  ]
+}
