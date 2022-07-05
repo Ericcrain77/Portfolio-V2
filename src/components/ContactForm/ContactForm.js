@@ -24,11 +24,8 @@ function ContactForm() {
                     </div>
                 </div>
                 <form className="contact-form-right">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." />
 
                     <label for="email">Email</label>
                     <input id="email" name="email" placeholder="Your email.." />
