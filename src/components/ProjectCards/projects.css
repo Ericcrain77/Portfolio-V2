@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    
+    height: 100vh;
 }
 
 .project-section h2 {
@@ -29,9 +29,42 @@
     border-radius: 8px;
     padding: 1rem;
     margin-top: 2rem;
-    height: 26rem;
+}
+
+.project-card:hover {
+    background-color: var(--granite-gray);
+    transition: .5s ease-in-out;
+    box-shadow: 1px 1px 12px 5px black;
 }
 
 .card-image {
-    max-width: 16rem;
+    max-width: 15.75rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.card-title {
+    padding-top: 2rem;
+    font-weight: 600;
+    font-size: clamp(20px, 4vw, 24px);
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+}
+
+.card-icons {
+    color: white;
+}
+
+.card-icons:hover {
+    color: var(--oxford-blue);
+    transition: .25s ease-in-out;
 }

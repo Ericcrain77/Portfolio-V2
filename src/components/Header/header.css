@@ -31,8 +31,8 @@
     padding-left: .5rem;
 }
 
-.header-container ul li a:hover {
-    opacity: 75%;
+.header-container ul li:hover {
+    opacity: 60%;
     transition: opacity .25s ease-in-out;
 }
 
