@@ -5,7 +5,7 @@ import EC_icon_1024x1024 from '../../assets/icons/EC_icon_1024x1024.png';
 import resume from '../../assets/resume/resume.pdf';
 import { IconContext } from 'react-icons';
 import { FaUser, FaFolderOpen } from 'react-icons/fa';
-import { GoCode } from 'react-icons/go';
+// import { GoCode } from 'react-icons/go';
 import { MdEmail } from 'react-icons/md';
 
 function Header() {
@@ -48,12 +48,12 @@ function Header() {
                             <a>Projects</a>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to='#coding-challenges' smooth>
                             <i><IconContext.Provider value={{ size: 16, color: 'white' }}><GoCode /></IconContext.Provider></i>
                             <a>Coding Challenges</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to='#contact' smooth>
                             <i><IconContext.Provider value={{ size: 16, color: 'white' }}><MdEmail /></IconContext.Provider></i>
