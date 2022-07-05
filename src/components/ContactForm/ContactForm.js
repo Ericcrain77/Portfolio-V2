@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from 'emailjs-com'
 import './contactForm.css';
 import { IconContext } from 'react-icons';
 import { FaLocationArrow, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 
 function ContactForm() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+
+    const submit = () => {
+        if (name && email && message) {
+            const serviceId = 'service_id';
+            const templateId = 'template_id';
+            const userId = 'user_id';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+    
+            setName('');
+            setEmail('');
+            setMessage('');
+            setEmailSent(true);
+        } else {
+            alert('Please fill in all fields.');
+        }
+    }
+
+    const isValidEmail = email => {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regex.test(String(email).toLowerCase());
+    };
+
     return (
         <div className="contact-form-section">
             <h2>Contact Me</h2>
@@ -24,16 +59,18 @@ function ContactForm() {
                     </div>
                 </div>
                 <form className="contact-form-right">
-                    <label for="fname">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name.." />
+                    <label>Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." value={name} onChange={e => setName(e.target.value)} />
 
-                    <label for="email">Email</label>
-                    <input id="email" name="email" placeholder="Your email.." />
+                    <label>Email</label>
+                    <input id="email" name="email" placeholder="Your email.." value={email} onChange={e => setEmail(e.target.value)} />
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <label>Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." value={message} onChange={e => setMessage(e.target.value)} ></textarea>
 
-                    <button type="submit" value="Submit">Submit</button>
+                    <button type="submit" value="Submit" onClick={submit}>Submit</button>
+
+                    <span className={emailSent ? 'visible' : null}>Thanks for reaching out! I will get back to you as soon as possible</span>
                 </form>
             </div>
         </div>

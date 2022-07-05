@@ -107,3 +107,9 @@
 .contact-form-right button:active {
     background-color: var(--oxford-blue);
 }
+
+.contact-form-right span {
+    padding-top: .75rem;
+    font-weight: 400;
+    font-size: clamp(10px, 2vw, 20px);
+}
