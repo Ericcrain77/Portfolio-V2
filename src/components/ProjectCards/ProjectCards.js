@@ -7,7 +7,7 @@ import { Card } from 'react-bootstrap';
 
 function ProjectCards() {
     return (
-        <div className="project-section">
+        <div className="project-section" id='projects'>
             <h2>Projects</h2>
             <div className="cards">
                 {

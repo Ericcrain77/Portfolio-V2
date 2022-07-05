@@ -5,7 +5,7 @@ import Carousel from "./carousel";
 
 function Intro() {
     return (
-        <div className='intro-container'>
+        <div className='intro-container' id='intro'>
             <div className="carousel">
                 <Carousel />
             </div>

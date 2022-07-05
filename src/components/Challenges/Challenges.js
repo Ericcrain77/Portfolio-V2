@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 
 function Challenges() {
     return (
-        <div className="challenges-section">
+        <div className="challenges-section" id="coding-challenges">
             <h2>Coding Challenges</h2>
             <div className="challenges-section-cards">
                 <Card>

@@ -26,7 +26,7 @@ function ContactForm() {
     const ThankYou = () => <span>Thanks for reaching out! I will get back to you as soon as possible</span>
 
     return (
-        <div className="contact-form-section">
+        <div className="contact-form-section" id="contact">
             <h2>Contact Me</h2>
             <div className="contact-form-container">
                 <div className="contact-form-left">

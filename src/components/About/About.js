@@ -6,16 +6,16 @@ import { SiJavascript, SiMongodb, SiExpress, SiReact } from 'react-icons/si';
 
 function About() {
     return (
-        <div className="about-section">
+        <div className="about-section" id='about'>
             <h2>A Little About Me</h2>
             <p>
                 I am a Junior Web Developer near Chattanooga, Tennessee currently looking for a great fit to kickstart my career. I have worked in healthcare as well as the agriculture industry, so I bring a unique perspective and attitude to working on web applications. I am fueled by my passion for creating. Writing code to make functional components or applications, while also utilizing imaginitive design, gives me an incredible sense of fulfillment. 
             </p>
             <p>
-                I consider myself a 'forever student.' I am always willing and wanting to learn new technologies/frameworks/ways of doing things that I may not already know. I am dilligent, hard-working, and motivated to getting better each and every day.
+                I consider myself a 'forever student.' I am always willing and wanting to learn new technologies, frameworks, and languages. I am dilligent, hard-working, and motivated to improving my skills each and every day.
             </p>
             <p>
-                A little about my personality: I am a husband, dog owner, video game nerd, sports fan, and enjoyer of trading card games, board games, and table-top role-playing games. I am a huge fan of Star Wars, we named my dog 'Mando' after The Mandalorian's nickname. I love kicking back and watching my favorite sports teams play. The teams I follow: University of Arkansas, Dallas Cowboys, Pittsburgh Penguins, Memphis Grizzlies, and Atlanta Braves. Some of my favorite video games are the From Software franchise games (Dark Souls 1, 2, and 3, Bloodbourne, Elden Ring, etc.) and the Mario Bros. franchise. I love playing Magic: The Gathering with my friends, and running Dungeons & Dragons campaigns.
+                A little about my personal life: I am a husband, dog owner, video game nerd, sports fan, Star Wars fanatic, and I enjoy playing Magic: The Gathering, board games, and tabletop role-playing games.
             </p>
             <p>
                 I have base skills in the following languages/frameworks, with a goal of becoming an expert in Front-End Development. 

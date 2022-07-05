@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './header.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import EC_icon_1024x1024 from '../../assets/icons/EC_icon_1024x1024.png';
 import resume from '../../assets/resume/resume.pdf';
 import { IconContext } from 'react-icons';
@@ -29,25 +30,35 @@ function Header() {
     return (
         <header className={classes}>
             <div>
-                <img src={EC_icon_1024x1024} alt='EC-Logo-Header' />
+                <Link to='#intro' smooth>
+                    <img src={EC_icon_1024x1024} alt='EC-Logo-Header' />
+                </Link>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <i><IconContext.Provider value={{ size: 16, color: 'white' }}><FaUser /></IconContext.Provider></i>
-                        <a href="#about">About</a>
+                        <Link to='#about' smooth>
+                            <i><IconContext.Provider value={{ size: 16, color: 'white' }}><FaUser /></IconContext.Provider></i>
+                            <a>About</a>
+                        </Link>
                     </li>
                     <li>
-                        <i><IconContext.Provider value={{ size: 16, color: 'white' }}><FaFolderOpen /></IconContext.Provider></i>
-                        <a href="#projects">Projects</a>
+                        <Link to='#projects' smooth>
+                            <i><IconContext.Provider value={{ size: 16, color: 'white' }}><FaFolderOpen /></IconContext.Provider></i>
+                            <a>Projects</a>
+                        </Link>
                     </li>
                     <li>
-                        <i><IconContext.Provider value={{ size: 16, color: 'white' }}><GoCode /></IconContext.Provider></i>
-                        <a href="#challenges">Coding Challenges</a>
+                        <Link to='#coding-challenges' smooth>
+                            <i><IconContext.Provider value={{ size: 16, color: 'white' }}><GoCode /></IconContext.Provider></i>
+                            <a>Coding Challenges</a>
+                        </Link>
                     </li>
                     <li>
-                        <i><IconContext.Provider value={{ size: 16, color: 'white' }}><MdEmail /></IconContext.Provider></i>
-                        <a href="#contact">Contact</a>
+                        <Link to='#contact' smooth>
+                            <i><IconContext.Provider value={{ size: 16, color: 'white' }}><MdEmail /></IconContext.Provider></i>
+                            <a>Contact</a>
+                        </Link>
                     </li>
                 </ul>
                 <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-btn">Resume</a>
