@@ -2,7 +2,7 @@
   "name": "updated-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Ericcrain77.github.io/ericcrain",
+  "homepage": "http://ericcrain77.github.io/ericcrain",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
