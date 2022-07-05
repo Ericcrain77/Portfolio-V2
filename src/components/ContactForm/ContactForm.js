@@ -1,44 +1,29 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 import './contactForm.css';
 import { IconContext } from 'react-icons';
 import { FaLocationArrow, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 
 function ContactForm() {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
 
-    const submit = () => {
-        if (name && email && message) {
-            const serviceId = 'service_id';
-            const templateId = 'template_id';
-            const userId = 'user_id';
-            const templateParams = {
-                name,
-                email,
-                message
-            };
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-            emailjs.send(serviceId, templateId, templateParams, userId)
-                .then(response => console.log(response))
-                .then(error => console.log(error));
-    
-            setName('');
-            setEmail('');
-            setMessage('');
-            setEmailSent(true);
-        } else {
-            alert('Please fill in all fields.');
-        }
+        const serviceId = 'service_rjdiybt';
+        const templateId = 'template_koqnxoi';
+        const userId = 'Qmnb-DFGwY1qYbj4R';
+
+        emailjs.sendForm(serviceId, templateId, e.target, userId)
+            .then(response => console.log(response))
+            .then(error => console.log(error));
+            e.target.reset();
     }
 
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
+    const onClick = () => setEmailSent(true);
+
+    const ThankYou = () => <span>Thanks for reaching out! I will get back to you as soon as possible</span>
 
     return (
         <div className="contact-form-section">
@@ -58,19 +43,19 @@ function ContactForm() {
                         <p><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
                     </div>
                 </div>
-                <form className="contact-form-right">
+                <form className="contact-form-right" onSubmit={sendEmail}>
                     <label>Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name.." value={name} onChange={e => setName(e.target.value)} />
+                    <input type="text" id="name" name="name" placeholder="Your name.." />
 
                     <label>Email</label>
-                    <input id="email" name="email" placeholder="Your email.." value={email} onChange={e => setEmail(e.target.value)} />
+                    <input id="email" name="email" placeholder="Your email.." />
 
                     <label>Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." value={message} onChange={e => setMessage(e.target.value)} ></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
 
-                    <button type="submit" value="Submit" onClick={submit}>Submit</button>
+                    <button type="submit" value="Submit" onClick={onClick}>Submit</button>
 
-                    <span className={emailSent ? 'visible' : null}>Thanks for reaching out! I will get back to you as soon as possible</span>
+                    {emailSent ? <ThankYou /> : null}
                 </form>
             </div>
         </div>
