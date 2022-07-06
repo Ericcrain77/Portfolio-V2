@@ -67,3 +67,23 @@
     padding-top: 0px;
     padding-bottom: 0px;
 }
+
+@media screen and (max-width: 980px) {
+    .header-container {
+        padding: 1rem;
+    }
+
+    .header-container nav ul {
+        padding-top: .35rem;
+        gap: 2rem;
+    }
+
+    .resume-btn {
+        background-color: var(--pacific-blue);
+        margin-top: -.25rem;
+        margin-left: 2rem;
+        padding: .5rem 1rem;
+        color: var(--oxford-blue);
+        text-decoration: none;
+    }
+}

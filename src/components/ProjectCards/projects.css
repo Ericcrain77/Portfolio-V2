@@ -24,7 +24,7 @@
 }
 
 .project-card {
-    width: 18rem;
+    width: 20rem;
     border: 1px solid var(--granite-gray);
     border-radius: 8px;
     padding: 1rem;
@@ -38,7 +38,7 @@
 }
 
 .card-image {
-    max-width: 15.75rem;
+    max-width: 17.75rem;
 }
 
 .card-body {
@@ -67,4 +67,30 @@
 .card-icons:hover {
     color: var(--oxford-blue);
     transition: .25s ease-in-out;
+}
+
+@media screen and (max-width: 980px) {
+    .project-section {
+        padding: 12rem 4rem 12rem 4rem;
+    }
+    .cards {
+        gap: 1.25rem;
+    }
+    .project-card {
+        background-color: var(--granite-gray);
+        box-shadow: 1px 1px 12px 5px black;
+        width: 12.25rem;
+        height: 28.5rem;
+        padding: 1rem .5rem;
+    }
+    .card-body {
+        gap: 1rem;
+    }
+    .card-image {
+        max-width: 10.75rem;
+    }
+    .card-title {
+        padding-top: 1rem;
+    }
+    
 }

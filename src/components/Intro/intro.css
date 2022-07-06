@@ -50,3 +50,18 @@
 .thumbs-wrapper {
     display: none;
 }
+
+@media screen and (max-width: 980px) {
+    .intro-container {
+        padding: 12rem 4rem 20rem 4rem;
+    }
+
+    .intro-words h1 {
+        width: 70%;
+    }
+
+    .carousel {
+        width: 15rem;
+        margin-right: 4rem;
+    }
+}

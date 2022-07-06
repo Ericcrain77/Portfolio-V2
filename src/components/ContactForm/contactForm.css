@@ -132,3 +132,9 @@
     animation-duration: 6000ms;
     animation-fill-mode: forwards;
 }
+
+@media screen and (max-width: 980px) {
+    .contact-form-section {
+        padding: 12rem 4rem 12rem 4rem;
+    }
+}

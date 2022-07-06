@@ -119,3 +119,48 @@
     padding-top: 3rem;
     margin-left: -1.5rem;
 }
+
+@media screen and (max-width: 980px) {
+    .about-section {
+        padding: 15rem 4rem 12rem 4rem;
+    }
+
+    .content {
+        opacity: 1;
+        font-size: clamp(10px, 2.5vw, 20px);
+        padding-top: 3.5rem;
+        padding-left: 2rem;
+    }
+
+    .about-icons {
+        justify-content: space-between;
+    }
+
+    .html-text {
+        margin-left: -1.75rem;
+    }
+
+    .css-text {
+        margin-left: -1.5rem;
+    }
+
+    .js-text {
+        margin-left: -2.5rem;
+    }
+
+    .mongo-text {
+        margin-left: -2.25rem;
+    }
+
+    .express-text {
+        margin-left: -2.15rem;
+    }
+
+    .react-text {
+        margin-left: -1.65rem;
+    }
+
+    .node-text {
+        margin-left: -1.75rem;
+    }
+}
