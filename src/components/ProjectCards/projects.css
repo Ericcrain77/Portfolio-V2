@@ -94,3 +94,34 @@
     }
     
 }
+
+@media screen and (max-width: 768px) {
+    .project-section {
+        padding: 12rem 4rem 12rem 4rem;
+    }
+    .cards {
+        gap: 1rem;
+    }
+    .project-card {
+        width: 9rem;
+        height: 21rem;
+        padding: 1rem .5rem;
+    }
+    .card-image {
+        max-width: 7.8rem;
+    }
+    .card-title {
+        padding-top: 1rem;
+        font-size: clamp(15px, 2vw, 10px);
+    }
+    .card-description {
+        font-weight: 600;
+        font-size: clamp(10px, 2vw, 10px);
+    }
+    .card-links {
+        padding-top: 1rem;
+    }
+    .card-icons {
+        color: white;
+    }
+}
