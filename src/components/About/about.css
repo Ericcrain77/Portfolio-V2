@@ -164,3 +164,48 @@
         margin-left: -1.75rem;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .about-section {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+
+    .content {
+        opacity: 1;
+        font-size: clamp(10px, 2.5vw, 20px);
+        padding-top: 3.5rem;
+        padding-left: 2rem;
+    }
+
+    .about-icons {
+        justify-content: space-between;
+    }
+
+    .html-text {
+        margin-left: -1.8rem;
+    }
+
+    .css-text {
+        margin-left: -1.75rem;
+    }
+
+    .js-text {
+        margin-left: -2.5rem;
+    }
+
+    .mongo-text {
+        margin-left: -2.3rem;
+    }
+
+    .express-text {
+        margin-left: -2.15rem;
+    }
+
+    .react-text {
+        margin-left: -1.85rem;
+    }
+
+    .node-text {
+        margin-left: -1.85rem;
+    }
+}

@@ -125,3 +125,46 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .project-section {
+        padding: 0 2rem 0 2rem;
+    }
+    .cards {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: .5rem;
+    }
+    .card-body {
+        flex-direction: column;
+        width: 40%;
+    }
+    .project-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 32rem;
+        height: 8rem;
+        padding: .75rem;
+        margin-top: 0;
+    }
+    .card-image {
+        max-width: 9.75rem;
+    }
+    .card-title {
+        padding-top: 0;
+    }
+    .card-description {
+        font-weight: 600;
+        font-size: clamp(10px, 2vw, 10px);
+        padding-bottom: .25rem;
+    }
+    .card-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .5rem;
+        width: 20%;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
 import './contactForm.css';
+import { useMediaQuery } from 'react-responsive';
 import { IconContext } from 'react-icons';
 import { FaLocationArrow, FaLinkedin, FaGithub } from 'react-icons/fa';
 
@@ -25,21 +26,27 @@ function ContactForm() {
 
     const ThankYou = () => <span>Thanks for reaching out! I will get back to you as soon as possible</span>
 
+    const desktopIcon = {size: 34};
+    const phoneIcon = {size: 24};
+
+    const isDesktopIcon = useMediaQuery({ maxWidth: 768 });
+    const iconSize = isDesktopIcon ? phoneIcon : desktopIcon
+
     return (
         <div className="contact-form-section" id="contact">
             <h2>Contact Me</h2>
             <div className="contact-form-container">
                 <div className="contact-form-left">
                     <div className="contact-preferences">
-                        <i><IconContext.Provider value={{ size: 34}}><FaLocationArrow /></IconContext.Provider></i>
+                        <i><IconContext.Provider value={{ size: iconSize.size }}><FaLocationArrow /></IconContext.Provider></i>
                         <p>Chattanooga, TN</p>
                     </div>
                     <div className="contact-preferences">
-                        <i><a href="https://www.linkedin.com/in/eric-crain-899a53218/" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: 34}}><FaLinkedin /></IconContext.Provider></a></i>
+                        <i><a href="https://www.linkedin.com/in/eric-crain-899a53218/" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: iconSize.size }}><FaLinkedin /></IconContext.Provider></a></i>
                         <p><a href="https://www.linkedin.com/in/eric-crain-899a53218/" target="_blank" rel="noopener noreferrer">My Linkedin Profile</a></p>
                     </div>
                     <div className="contact-preferences">
-                        <i><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: 34}}><FaGithub /></IconContext.Provider></a></i>
+                        <i><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer"><IconContext.Provider value={{className: 'contact-icons', size: iconSize.size }}><FaGithub /></IconContext.Provider></a></i>
                         <p><a href="https://github.com/Ericcrain77" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></p>
                     </div>
                 </div>

@@ -138,3 +138,43 @@
         padding: 12rem 4rem 12rem 4rem;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .contact-form-section {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+    .contact-form-container {
+        justify-content: space-evenly;
+    }
+    .contact-form-left {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+    }
+    .contact-form-right {
+        flex-direction: column;
+        justify-content: center;
+        width: 85%;
+        padding-top: 1rem;
+        padding-left: 0;
+        border-left: none;
+    }
+    .contact-preferences p {
+        margin: 0 1.25rem;
+        padding-top: .25rem;
+        font-weight: 400;
+        font-size: clamp(10px, 2vw, 20px);
+    }
+    .contact-form-right label {
+        font-size: clamp(15px, 2vw, 20px);
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+    }
+    .contact-form-right button {
+        margin-top: 1.25rem;
+        width: 30%;
+        padding: .75rem;
+        font-weight: 400;
+        font-size: clamp(15px, 2vw, 20px);
+    }
+}

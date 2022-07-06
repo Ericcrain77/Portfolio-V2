@@ -65,3 +65,17 @@
         margin-right: 4rem;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .intro-container {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+    .intro-words h1 {
+        width: 75%;
+    }
+    .carousel {
+        width: 12rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+}

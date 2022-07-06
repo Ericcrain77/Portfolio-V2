@@ -1,10 +1,17 @@
 import React from "react";
 import './about.css';
+import { useMediaQuery } from 'react-responsive';
 import { IconContext } from 'react-icons';
 import { FaHtml5, FaCss3, FaNode } from 'react-icons/fa';
 import { SiJavascript, SiMongodb, SiExpress, SiReact } from 'react-icons/si';
 
 function About() {
+    const desktopIcon = {size: 72};
+    const phoneIcon = {size: 48};
+
+    const isDesktopIcon = useMediaQuery({ maxWidth: 768 });
+    const iconSize = isDesktopIcon ? phoneIcon : desktopIcon
+
     return (
         <div className="about-section" id='about'>
             <h2>A Little About Me</h2>
@@ -22,43 +29,43 @@ function About() {
             </p>
             <div className="about-icons">
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'html-icon' }}><FaHtml5 /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'html-icon' }}><FaHtml5 /></IconContext.Provider>
                     <div className="content html-text">
                         <div>HTML5</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'css-icon' }}><FaCss3 /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'css-icon' }}><FaCss3 /></IconContext.Provider>
                     <div className="content css-text">
                         <div>CSS3</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'js-icon' }}><SiJavascript /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'js-icon' }}><SiJavascript /></IconContext.Provider>
                     <div className="content js-text">
                         <div>JavaScript</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'mongo-icon' }}><SiMongodb /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'mongo-icon' }}><SiMongodb /></IconContext.Provider>
                     <div className="content mongo-text">
                         <div>MongoDB</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'express-icon' }}><SiExpress /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'express-icon' }}><SiExpress /></IconContext.Provider>
                     <div className="content express-text">
                         <div>express.js</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'react-icon' }}><SiReact /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'react-icon' }}><SiReact /></IconContext.Provider>
                     <div className="content react-text">
                         <div>React.js</div>
                     </div>
                 </div>
                 <div className="reveal">
-                    <IconContext.Provider value={{ size: 72, className: 'node-icon' }}><FaNode /></IconContext.Provider>
+                    <IconContext.Provider value={{ size: iconSize.size, className: 'node-icon' }}><FaNode /></IconContext.Provider>
                     <div className="content node-text">
                         <div>node.js</div>
                     </div>
