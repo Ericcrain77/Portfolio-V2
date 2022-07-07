@@ -181,7 +181,7 @@
         font-size: clamp(30px, 4vw, 40px);
     }
     .cards {
-        margin: 12rem auto 8rem auto;
+        margin: 16rem auto 12rem auto;
     }
     .project-card {
         width: 100%;
