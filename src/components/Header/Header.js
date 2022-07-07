@@ -11,7 +11,7 @@ import { MdEmail } from 'react-icons/md';
 
 function Header() {
     const [sticky, setSticky] = useState("");
-    const [toggle, setToggle] = useState(false);
+    const [toggleHamburger, setToggleHamburger] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
@@ -42,39 +42,39 @@ function Header() {
                     <img src={EC_icon_1024x1024} alt='EC-Logo-Header' />
                 </Link>
             </div>
-            <a href="#" onClick={() => setToggle(!toggle)} className="menu-btn">
+            <a href="#" onClick={() => setToggleHamburger(true)} className="menu-btn" id="close-menu">
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
             </a>
-            <nav className={`navbar-links ${toggle && "active"}`}>
+            <nav className={`navbar-links ${toggleHamburger && "active"}`}>
                 <ul>
-                    <Link to='#about' style={{textDecoration: "none"}} smooth>
+                    <Link to='#about' style={{textDecoration: "none"}} onClick={() => setToggleHamburger(false)} smooth>
                         <li>
                             <i><IconContext.Provider value={{ size: iconSize.size, color: 'white' }}><FaUser /></IconContext.Provider></i>
                             <a>About</a>
                         </li>
                     </Link>
-                    <Link to='#projects' style={{textDecoration: "none"}} smooth>
+                    <Link to='#projects' style={{textDecoration: "none"}} onClick={() => setToggleHamburger(false)} smooth>
                         <li>
                             <i><IconContext.Provider value={{ size: iconSize.size, color: 'white' }}><FaFolderOpen /></IconContext.Provider></i>
                             <a>Projects</a>
                         </li>
                     </Link>
-                    {/* <Link to='#coding-challenges' style={{textDecoration: "none"}} smooth>
+                    {/* <Link to='#coding-challenges' style={{textDecoration: "none"}} onClick={() => setToggleHamburger(false)} smooth>
                         <li>
                             <i><IconContext.Provider value={{ size: iconSize.size, color: 'white' }}><GoCode /></IconContext.Provider></i>
                             <a>Coding Challenges</a>
                         </li>
                     </Link> */}
-                    <Link to='#contact' style={{textDecoration: "none"}} smooth>
+                    <Link to='#contact' style={{textDecoration: "none"}} onClick={() => setToggleHamburger(false)} smooth>
                         <li>
                             <i><IconContext.Provider value={{ size: iconSize.size, color: 'white' }}><MdEmail /></IconContext.Provider></i>
                             <a>Contact</a>
                         </li>
                     </Link>
                 </ul>
-                <a href={resume} target="_blank" rel="noopener noreferrer" className="resume-btn">Resume</a>
+                <a href={resume} target="_blank" rel="noopener noreferrer" onClick={() => setToggleHamburger(false)} className="resume-btn">Resume</a>
             </nav>
       </header>
     )
