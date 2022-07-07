@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5c4f077.css",
+    "main.css": "/static/css/main.17fddd80.css",
     "main.js": "/static/js/main.d2e9dce5.js",
     "static/media/Sneak-Peek.png": "/static/media/Sneak-Peek.61b8d8a35439d47ebb6b.png",
     "static/media/resume.pdf": "/static/media/resume.47d3489427126c45e688.pdf",
@@ -16,11 +16,11 @@
     "static/media/Weather-Dashboard.png": "/static/media/Weather-Dashboard.2d22e4632bf00a75e67d.png",
     "static/media/Budget-Tracker-Homepage.png": "/static/media/Budget-Tracker-Homepage.282a4d30abfe9edd53cf.png",
     "index.html": "/index.html",
-    "main.d5c4f077.css.map": "/static/css/main.d5c4f077.css.map",
+    "main.17fddd80.css.map": "/static/css/main.17fddd80.css.map",
     "main.d2e9dce5.js.map": "/static/js/main.d2e9dce5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5c4f077.css",
+    "static/css/main.17fddd80.css",
     "static/js/main.d2e9dce5.js"
   ]
 }
