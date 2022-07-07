@@ -133,38 +133,89 @@
     .cards {
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: .5rem;
+        margin-top: 8rem;
+        margin-bottom: 4rem;
     }
     .card-body {
         flex-direction: column;
-        width: 40%;
+        width: 50%;
+        margin-right: -2rem;
     }
     .project-card {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 32rem;
-        height: 8rem;
+        min-height: 8.5rem;
         padding: .75rem;
         margin-top: 0;
     }
     .card-image {
-        max-width: 9.75rem;
+        max-width: 10.25rem;
     }
     .card-title {
         padding-top: 0;
     }
     .card-description {
         font-weight: 600;
-        font-size: clamp(10px, 2vw, 10px);
+        font-size: clamp(12px, 2vw, 10px);
         padding-bottom: .25rem;
     }
     .card-links {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding-top: .5rem;
+        margin-top: -1rem;
+        margin-right: -1.5rem;
+        gap: 1rem;
         width: 20%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .project-section {
+        padding: 0 1.25rem;
+    }
+    .project-section h2 {
+        font-size: clamp(30px, 4vw, 40px);
+    }
+    .cards {
+        margin: 12rem auto 8rem auto;
+    }
+    .project-card {
+        width: 100%;
+        min-height: 10rem;
+        padding: .75rem;
+    }
+    .card-image {
+        margin-top: auto;
+        margin-bottom: auto;
+        max-width: 7.5rem;
+    }
+    .card-title {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .card-body {
+        margin-top: auto;
+        margin-bottom: auto;
+        gap: .5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .project-section {
+        padding-top: 0;
+    }
+    .cards {
+        margin: 19rem auto 15rem auto;
+    }
+    .card-description {
+        font-size: clamp(11px, 2vw, 8px);
+    }
+    .card-body {
+        padding-right: .25rem;
     }
 }

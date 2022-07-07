@@ -178,3 +178,16 @@
         font-size: clamp(15px, 2vw, 20px);
     }
 }
+
+@media screen and (max-width: 420px) {
+    .contact-form-left {
+        margin-left: 1.2rem;
+    }
+    .contact-preferences p {
+        margin: 0 1.5rem 0 .5rem;
+        padding-top: .25rem;
+        font-weight: 400;
+        font-size: clamp(10px, 2vw, 20px);
+        text-align: center;
+    }
+}

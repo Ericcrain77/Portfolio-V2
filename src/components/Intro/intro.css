@@ -78,4 +78,18 @@
         margin-right: 2rem;
         margin-top: 2rem;
     }
+    .intro-words h4 {
+        font-size: clamp(14px, 2vw, 20px);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .intro-container {
+        flex-direction: column;
+        padding: 1rem 2rem 5rem 2rem;
+    }
+    .carousel {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
