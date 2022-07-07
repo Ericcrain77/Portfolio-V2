@@ -13,6 +13,10 @@ function Header() {
     const [sticky, setSticky] = useState("");
     const [toggleHamburger, setToggleHamburger] = useState(false);
 
+    const handleToggle = () => {
+        setToggleHamburger(!toggleHamburger)
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', isSticky);
         return () => {
@@ -42,7 +46,7 @@ function Header() {
                     <img src={EC_icon_1024x1024} alt='EC-Logo-Header' />
                 </Link>
             </div>
-            <a href="#" onClick={() => setToggleHamburger(true)} className="menu-btn" id="close-menu">
+            <a href="javascript:void(0)" className="menu-btn" onClick={handleToggle}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
