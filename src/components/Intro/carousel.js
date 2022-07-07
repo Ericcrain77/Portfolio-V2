@@ -4,6 +4,7 @@ import EricCat from '../../assets/images/EricCat.jpg';
 import EricMando from '../../assets/images/EricMando.jpg';
 import Ericbw from '../../assets/images/Ericbw.jpg';
 import EricCat2 from '../../assets/images/EricCat2.jpg';
+import './intro.css';
 
 export default () => (
     <Carousel>

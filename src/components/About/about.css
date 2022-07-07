@@ -214,7 +214,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .about-section {
         padding: 5rem 2rem 5rem 2rem;
     }
@@ -276,7 +276,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .about-icons {
         width: 100%;
         flex-wrap: wrap;

@@ -173,7 +173,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .project-section {
         padding: 0 1.25rem;
     }

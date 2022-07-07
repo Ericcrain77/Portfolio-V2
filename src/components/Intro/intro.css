@@ -41,10 +41,21 @@
     align-self: center;
     margin-right: 4rem;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
 .carousel p {
     display: none;
+}
+
+.photo {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.photo img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
 
 .thumbs-wrapper {
@@ -91,6 +102,5 @@
     .carousel {
         margin-left: auto;
         margin-right: auto;
-        border-radius: 50%;
     }
 }
