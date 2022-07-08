@@ -1,24 +1,48 @@
-// import React from "react";
-// import './challenges.css';
-// import { Card } from 'react-bootstrap';
+import React, { useState } from "react";
+import Modal from 'react-modal';
+import './challenges.css';
 
-// function Challenges() {
-//     return (
-//         <div className="challenges-section" id="coding-challenges">
-//             <h2>Coding Challenges</h2>
-//             <div className="challenges-section-cards">
-//                 <Card>
-//                     <Card.Img variant="top" src={require('../../assets/images/Budget-Tracker-Homepage.png')} className='card-image' />
-//                     <Card.Body>
-//                         <Card.Title>Title</Card.Title>
-//                         <Card.Text>
-//                             Description
-//                         </Card.Text>
-//                     </Card.Body>
-//                 </Card>
-//             </div>
-//         </div>
-//     )
-// };
+Modal.setAppElement('#root');
 
-// export default Challenges;
+const MODAL_STYLES = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundcolor: 'var(--granite-gray)',
+    padding: '3rem',
+    zIndex: 1000,
+}
+
+function Challenges() {
+    const [toggleModal, setToggleModal] = useState(false);
+
+    return (
+        <div className="challenges-section" id="coding-challenges">
+            <h2>Coding Challenges</h2>
+            <h3>Clicking on a challenge will open a modal displaying the associated challenge</h3>
+            <div className="challenges-section-cards">
+                <div className="modal-card">
+                    <h4>FizzBuzz</h4>
+                    <p>Enter two numbers. Any number between 1 and 100 that is divisible by your numbers will be replaced with either 'Fizz' or 'Buzz.' If the number from 1-100 is divisible by both given numbers, it will be replaced with 'FizzBuzz.'</p>
+                    <button className='modal-btn' onClick={() => setToggleModal(true)}>Open</button>
+                    <Modal 
+                        style={MODAL_STYLES} 
+                        isOpen={toggleModal} 
+                        onRequestClose={() => setToggleModal(false)}
+                    >
+                        <div className="challenge-modal">
+                            <h1>Hello</h1>
+                            <p>world!</p>
+                            <div>
+                                <button className='modal-btn' onClick={() => setToggleModal(false)}>Close</button>
+                            </div> 
+                        </div>
+                    </Modal>
+                </div>
+            </div>
+        </div>
+    )
+};
+
+export default Challenges;

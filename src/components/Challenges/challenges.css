@@ -14,10 +14,63 @@
     font-size: clamp(20px, 4vw, 40px);
 }
 
+.challenges-section h3 {
+    padding: 2rem 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2vw, 20px);
+}
+
 .challenges-section-cards {
-    width: 18rem;
+    margin: auto;
+}
+
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 25rem;
+    height: 18rem;
     border: 1px solid var(--granite-gray);
     border-radius: 8px;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.modal-card:hover {
+    background-color: var(--granite-gray);
+    transition: .25s ease-in-out;
+    box-shadow: 1px 1px 12px 5px black;
+}
+
+.modal-card h4 {
+    font-weight: 600;
+    font-size: clamp(20px, 4vw, 24px);
+}
+
+.modal-btn {
+    font-size: large;
+    color: var(--oxford-blue);
+    background-color: var(--pacific-blue);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5rem 1.25rem;
+    text-decoration: none;
+}
+
+.modal-card button:hover {
+    background-color: var(--pacific-blue-dark);
+    color: white;
+}
+
+.challenge-modal h1 {
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 40px);
+}
+
+.challenge-modal p {
+    font-weight: 400;
+    font-size: clamp(20px, 4vw, 40px);
 }
