@@ -14,15 +14,9 @@
     font-size: clamp(20px, 4vw, 40px);
 }
 
-.challenges-section h3 {
-    padding: 2rem 0;
-    font-style: italic;
-    font-weight: 400;
-    font-size: clamp(20px, 2vw, 20px);
-}
-
 .challenges-section-cards {
     margin: auto;
+    margin-top: 2rem;
 }
 
 .modal-card {
@@ -55,6 +49,7 @@
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     padding: .5rem 1.25rem;
     text-decoration: none;
     color: white;
@@ -64,7 +59,7 @@
     background-color: var(--pacific-blue-dark);
 }
 
-.challenge-modal-inside {
+.fb-modal {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -73,7 +68,73 @@
     text-align: center;
 }
 
-.challenge-modal-inside h1 {
+.fb-modal h1 {
     font-weight: 400;
     font-size: clamp(20px, 4vw, 40px);
+}
+
+.fb-modal p {
+    font-weight: 400;
+    font-size: clamp(10px, 1vw, 18px);
+    margin: 1rem 5rem;
+}
+
+.fb-modal input {
+    height: 2rem;
+    width: 30%;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+    font-size: 16px;
+}
+
+.fb-modal table {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.fb-modal table tbody {
+    background-color: var(--granite-gray);
+}
+
+.fb-modal table tbody tr td {
+    background-color: white;
+    width: 5rem;
+}
+
+@media screen and (max-width: 575px) {
+    .challenges-section {
+        padding: 5rem 1.25rem;
+    }
+    .modal-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 32rem;
+        height: 10rem;
+        padding: .75rem;
+        background-color: var(--granite-gray);
+        box-shadow: 1px 1px 12px 5px black;
+    }
+    .modal-card h4 {
+        font-weight: 600;
+        font-size: clamp(18px, 2vw, 10px);
+    }
+    .modal-card p {
+        font-weight: 600;
+        font-size: clamp(12px, 2vw, 10px);
+        padding: .5rem 3rem;
+    }
+    .modal-btn {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    .fb-modal p {
+        font-weight: 400;
+        font-size: clamp(10px, 1vw, 18px);
+        margin: .75rem 0;
+    }
 }

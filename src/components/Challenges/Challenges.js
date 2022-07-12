@@ -8,9 +8,11 @@ Modal.setAppElement('#root');
 const MODAL_STYLES = {
     content: {
         position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
+        top: '5rem',
+        right: '5rem',
+        bottom: '5rem',
+        left: '5rem',
+        // transform: 'translate(-5rem, -15rem)',
         backgroundcolor: 'var(--granite-gray)',
         padding: '2rem',
         boxShadow: '1px 1px 25px 5px black'
@@ -35,11 +37,12 @@ function Challenges() {
     return (
         <div className="challenges-section" id="coding-challenges">
             <h2>Coding Challenges</h2>
-            <h3>Clicking on a challenge will open a modal displaying the associated challenge</h3>
             <div className="challenges-section-cards">
                 <div className="modal-card">
-                    <h4>FizzBuzz</h4>
-                    <p>Enter two numbers. Any number between 1 and 100 that is divisible by your numbers will be replaced with either 'Fizz' or 'Buzz.' If the number from 1-100 is divisible by both given numbers, it will be replaced with 'FizzBuzz.'</p>
+                    <div>
+                        <h4>FizzBuzz</h4>
+                        <p>Enter two numbers. Any number between 1 and 100 that is divisible by your numbers will be replaced with either 'Fizz', 'Buzz', or 'FizzBuzz.' If the number from 1-100 is divisible by both given numbers, it will be replaced with 'FizzBuzz.'</p>
+                    </div>
                     <button className='modal-btn' onClick={() => setToggleModal(true)}>Open</button>
                     <Modal 
                         style={MODAL_STYLES} 
@@ -48,9 +51,6 @@ function Challenges() {
                     >
                         <div>
                             <FizzBuzz />
-                            <div>
-                                <button className='modal-btn' onClick={() => setToggleModal(false)}>Close</button>
-                            </div> 
                         </div>
                     </Modal>
                 </div>

@@ -15,7 +15,7 @@ function FizzBuzz() {
             displayData(fbData);
     
         } else {
-            alert("You must enter integers");
+            alert("Please fill in the Value boxes with integers.");
         }
     }
 
@@ -68,34 +68,27 @@ function FizzBuzz() {
     
 
     return (
-        <div className='challenge-modal-inside'>
+        <div className='fb-modal'>
             <h1>React FizzBuzz</h1>
-            <div>
-                <p>Enter a fizz and a buzz value. Press the button and the values will appear.</p>
-            </div>
-            <div>
+            <p>Input different numbers, from 1-100, in the 'Fizz Value' and 'Buzz Value' boxes, and click the 'Submit' button. If a number is divisible by the Fizz Value, it will be replaced by the word 'Fizz'. If a number is divisible by the Buzz Value, it will be replaced by the word 'Buzz'. If a number is divisible by both the Fizz and Buzz Values, it will be replaced by the word 'FizzBuzz'. </p>
+            <form>
                 <div>
-                    <h5>Enter Values</h5>
-                    <form>
-                        <div>
-                            <input id="fizzValue" type="number"  placeholder="Fizz Value"
-                            aria-label="Fizz Value"></input>
-                        </div>
-                        <div>
-                            <input id="buzzValue" type="number"  placeholder="Buzz Value"
-                            aria-label="Buzz Value"></input>
-                        </div>
-                        <div>
-                            <button id="btnSubmit" type="button" className="modal-btn" onClick={getValues}>Buzz It</button>
-                        </div>
-                    </form>
-                    <div>
-                        <table>
-                            <tbody id="results">
-                            </tbody>
-                        </table>
-                    </div>
+                    <input id="fizzValue" type="number" placeholder="Fizz Value"
+                    aria-label="Fizz Value"></input>
                 </div>
+                <div>
+                    <input id="buzzValue" type="number" placeholder="Buzz Value"
+                    aria-label="Buzz Value"></input>
+                </div>
+                <div>
+                    <button id="btnSubmit" type="button" className="modal-btn" onClick={getValues}>Submit</button>
+                </div>
+            </form>
+            <div>
+                <table>
+                    <tbody id="results">
+                    </tbody>
+                </table>
             </div>
         </div>
     )
