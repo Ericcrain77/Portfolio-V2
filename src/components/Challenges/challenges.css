@@ -65,12 +65,15 @@
     color: white;
 }
 
-.challenge-modal h1 {
-    font-weight: 400;
-    font-size: clamp(20px, 4vw, 40px);
+.challenge-modal-inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
 }
 
-.challenge-modal p {
+.challenge-modal-inside h1 {
     font-weight: 400;
     font-size: clamp(20px, 4vw, 40px);
 }
