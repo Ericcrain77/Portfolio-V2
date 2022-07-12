@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Modal from 'react-modal';
 import './challenges.css';
+import FizzBuzz from './FizzBuzz';
 
 Modal.setAppElement('#root');
 
@@ -21,8 +22,6 @@ const MODAL_STYLES = {
 
 function Challenges() {
     const [toggleModal, setToggleModal] = useState(false);
-    
-    const count = 1;
 
     useEffect(() => {
         if (toggleModal === true) {
@@ -32,20 +31,6 @@ function Challenges() {
             document.body.style.overflow = 'visible'
         }
     }, [toggleModal]);
-
-    const handleDecrement = () => {
-        if (count > 1) {
-            this.setState(
-                (prevState) => ({count: prevState.count - 1})
-            )
-        }
-    };
-
-    const handleIncrement = () => {
-        this.setState(
-            (prevState) => ({count: prevState.count + 1})
-        )
-    };
 
     return (
         <div className="challenges-section" id="coding-challenges">
@@ -61,22 +46,8 @@ function Challenges() {
                         isOpen={toggleModal} 
                         onRequestClose={() => setToggleModal(false)}
                     >
-                        <div className="challenge-modal-inside">
-                            <h1>React FizzBuzz</h1>
-                            <form>
-                                <input></input>
-                                <input></input>
-                            </form>
-                            <h2>
-                                {
-                                    (count % 15 === 0) ? "FizzBuzz" :
-                                    (count % 3 === 0)  ? "Fizz"     : 
-                                    (count % 5 === 0)  ? "Buzz"     : 
-                                    count
-                                }
-                            </h2>
-                            <button onClick={handleDecrement}>-</button>
-                            <button onClick={handleIncrement}>+</button>
+                        <div>
+                            <FizzBuzz />
                             <div>
                                 <button className='modal-btn' onClick={() => setToggleModal(false)}>Close</button>
                             </div> 

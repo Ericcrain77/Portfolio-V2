@@ -50,7 +50,6 @@
 
 .modal-btn {
     font-size: large;
-    color: var(--oxford-blue);
     background-color: var(--pacific-blue);
     border: 1px solid black;
     border-radius: 8px;
@@ -58,11 +57,11 @@
     margin-right: auto;
     padding: .5rem 1.25rem;
     text-decoration: none;
+    color: white;
 }
 
-.modal-card button:hover {
+.modal-btn:hover {
     background-color: var(--pacific-blue-dark);
-    color: white;
 }
 
 .challenge-modal-inside {
@@ -70,7 +69,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: auto;
-    height: auto;
+    margin: auto;
+    text-align: center;
 }
 
 .challenge-modal-inside h1 {
