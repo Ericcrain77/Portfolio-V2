@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1391344.css",
-    "main.js": "/static/js/main.321aa3fb.js",
+    "main.css": "/static/css/main.39268cfe.css",
+    "main.js": "/static/js/main.daca5a6d.js",
     "static/media/Sneak-Peek.png": "/static/media/Sneak-Peek.61b8d8a35439d47ebb6b.png",
     "static/media/resume.pdf": "/static/media/resume.ce88908f8ef2e7e75f59.pdf",
     "static/media/Table-Top-Warriors-Logo.png": "/static/media/Table-Top-Warriors-Logo.7ea511d03dab2fc56509.png",
@@ -16,11 +16,11 @@
     "static/media/Weather-Dashboard.png": "/static/media/Weather-Dashboard.2d22e4632bf00a75e67d.png",
     "static/media/Budget-Tracker-Homepage.png": "/static/media/Budget-Tracker-Homepage.282a4d30abfe9edd53cf.png",
     "index.html": "/index.html",
-    "main.e1391344.css.map": "/static/css/main.e1391344.css.map",
-    "main.321aa3fb.js.map": "/static/js/main.321aa3fb.js.map"
+    "main.39268cfe.css.map": "/static/css/main.39268cfe.css.map",
+    "main.daca5a6d.js.map": "/static/js/main.daca5a6d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1391344.css",
-    "static/js/main.321aa3fb.js"
+    "static/css/main.39268cfe.css",
+    "static/js/main.daca5a6d.js"
   ]
 }
