@@ -9,9 +9,9 @@ const MODAL_STYLES = {
     content: {
         position: 'absolute',
         top: '5rem',
-        right: '5rem',
+        right: '3rem',
         bottom: '5rem',
-        left: '5rem',
+        left: '3rem',
         // transform: 'translate(-5rem, -15rem)',
         backgroundcolor: 'var(--granite-gray)',
         padding: '2rem',
@@ -39,7 +39,7 @@ function Challenges() {
             <h2>Coding Challenges</h2>
             <div className="challenges-section-cards">
                 <div className="modal-card">
-                    <div>
+                    <div className="modal-card-body">
                         <h4>FizzBuzz</h4>
                         <p>Enter two numbers. Any number between 1 and 100 that is divisible by your numbers will be replaced with either 'Fizz', 'Buzz', or 'FizzBuzz.' If the number from 1-100 is divisible by both given numbers, it will be replaced with 'FizzBuzz.'</p>
                     </div>
