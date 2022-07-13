@@ -181,6 +181,9 @@
 }
 
 @media screen and (max-width: 430px) {
+    .contact-form-section {
+        padding: 8rem 2rem 0rem 2rem;
+    }
     .contact-form-section h2 {
         font-size: clamp(30px, 4vw, 40px);
     }

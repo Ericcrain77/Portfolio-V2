@@ -216,7 +216,7 @@
 
 @media screen and (max-width: 430px) {
     .about-section {
-        padding: 5rem 2rem 5rem 2rem;
+        padding: 5rem 2rem 0rem 2rem;
     }
 
     .about-section h2 {
