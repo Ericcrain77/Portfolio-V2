@@ -133,7 +133,7 @@
     .cards {
         flex-direction: column;
         flex-wrap: nowrap;
-        margin-top: 8rem;
+        margin-top: 12rem;
         margin-bottom: 4rem;
     }
     .card-body {
@@ -175,13 +175,13 @@
 
 @media screen and (max-width: 430px) {
     .project-section {
-        padding: 0 1.25rem;
+        padding: 5rem 1.25rem;
     }
     .project-section h2 {
         font-size: clamp(30px, 4vw, 40px);
     }
     .cards {
-        margin: 16rem auto 12rem auto;
+        margin: 22rem auto 12rem auto;
     }
     .project-card {
         width: 100%;
